@@ -2,7 +2,7 @@
 
 NAME			= MoarBrainz
 
-SRCS			= main.cpp Zombie.cpp zombieHorde.cpp
+SRCS			= main.cpp Zombie.cpp ZombieHorde.cpp
 
 FLAGS			= -g -Wall -Wextra -Werror -std=c++98
 
