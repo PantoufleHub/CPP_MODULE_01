@@ -1,6 +1,6 @@
 ########################## VARIABLES ###############################
 
-NAME			= sedisforloserss
+NAME			= sedisforlosers
 
 SRCS			= main.cpp
 

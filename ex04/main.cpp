@@ -21,12 +21,22 @@ int main(int argc, char **argv)
 		std::cout << "Input error" << std::endl;
 		return 1;
 	}
+	if (!((std::string)(argv[2])).compare(""))
+	{
+		std::cout << "Input error" << std::endl;
+		return 1;
+	}
 	std::string outname = argv[1];
 	outname += ".replace";
 
 	std::ifstream ifs(argv[1]);
+	if (!ifs.is_open())
+	{
+		std::cout << "File error" << std::endl;
+		return 1;
+	}
 	std::ofstream ofs(outname, std::ios::trunc);
-	if (!ifs.is_open() || !ofs.is_open())
+	if (!ofs.is_open())
 	{
 		std::cout << "File error" << std::endl;
 		return 1;
